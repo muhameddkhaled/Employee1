@@ -171,9 +171,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 780);
+            this.panel2.Location = new System.Drawing.Point(0, 766);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1395, 100);
+            this.panel2.Size = new System.Drawing.Size(1395, 114);
             this.panel2.TabIndex = 71;
             // 
             // label2

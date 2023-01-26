@@ -36,7 +36,6 @@
             this.Edition = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.DepNameTb = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -54,6 +53,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -131,17 +131,6 @@
             this.DepNameTb.Name = "DepNameTb";
             this.DepNameTb.Size = new System.Drawing.Size(221, 30);
             this.DepNameTb.TabIndex = 82;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(23, 348);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 25);
-            this.label6.TabIndex = 81;
-            this.label6.Text = "Department Name ";
             // 
             // pictureBox6
             // 
@@ -352,12 +341,24 @@
             this.label9.TabIndex = 93;
             this.label9.Text = "Employee";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Teal;
+            this.label6.Location = new System.Drawing.Point(23, 348);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(175, 25);
+            this.label6.TabIndex = 94;
+            this.label6.Text = "Department Name ";
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 880);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -367,7 +368,6 @@
             this.Controls.Add(this.Edition);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.DepNameTb);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -405,7 +405,6 @@
         private System.Windows.Forms.Button Edition;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.TextBox DepNameTb;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -423,5 +422,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
     }
 }

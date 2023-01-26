@@ -172,9 +172,9 @@
             this.label13.ForeColor = System.Drawing.Color.Teal;
             this.label13.Location = new System.Drawing.Point(26, 464);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 25);
+            this.label13.Size = new System.Drawing.Size(205, 25);
             this.label13.TabIndex = 97;
-            this.label13.Text = "Period";
+            this.label13.Text = "Employee Department";
             // 
             // pictureBox5
             // 

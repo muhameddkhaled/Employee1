@@ -56,8 +56,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -361,36 +361,6 @@
             this.pictureBox6.TabIndex = 94;
             this.pictureBox6.TabStop = false;
             // 
-            // gunaAdvenceButton2
-            // 
-            this.gunaAdvenceButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton2.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.CheckedImage")));
-            this.gunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaAdvenceButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.Image")));
-            this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(583, 355);
-            this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
-            this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.OnHoverImage = null;
-            this.gunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.Size = new System.Drawing.Size(379, 185);
-            this.gunaAdvenceButton2.TabIndex = 90;
-            this.gunaAdvenceButton2.Text = "gunaAdvenceButton2";
-            // 
             // gunaAdvenceButton1
             // 
             this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
@@ -421,12 +391,31 @@
             this.gunaAdvenceButton1.TabIndex = 89;
             this.gunaAdvenceButton1.Text = "gunaAdvenceButton1";
             // 
+            // gunaComboBox1
+            // 
+            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
+            this.gunaComboBox1.FormattingEnabled = true;
+            this.gunaComboBox1.Location = new System.Drawing.Point(370, 346);
+            this.gunaComboBox1.Name = "gunaComboBox1";
+            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.gunaComboBox1.Size = new System.Drawing.Size(792, 31);
+            this.gunaComboBox1.TabIndex = 111;
+            // 
             // salary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 703);
+            this.Controls.Add(this.gunaComboBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -450,7 +439,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.gunaAdvenceButton2);
             this.Controls.Add(this.gunaAdvenceButton1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -498,7 +486,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton2;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
     }
 }

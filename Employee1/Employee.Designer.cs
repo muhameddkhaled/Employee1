@@ -54,6 +54,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -158,7 +159,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Teal;
-            this.label4.Location = new System.Drawing.Point(26, 503);
+            this.label4.Location = new System.Drawing.Point(26, 539);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 25);
             this.label4.TabIndex = 98;
@@ -306,10 +307,21 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
             "Famle "});
-            this.comboBox1.Location = new System.Drawing.Point(28, 431);
+            this.comboBox1.Location = new System.Drawing.Point(28, 428);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(221, 33);
-            this.comboBox1.TabIndex = 109;
+            this.comboBox1.TabIndex = 110;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Male",
+            "Famle "});
+            this.comboBox2.Location = new System.Drawing.Point(28, 492);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(221, 33);
+            this.comboBox2.TabIndex = 111;
             // 
             // Employee
             // 
@@ -317,6 +329,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1349, 788);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.pictureBox6);
@@ -381,5 +394,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

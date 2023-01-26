@@ -35,7 +35,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.Edition = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
-            this.DepNameTb = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -54,6 +53,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.DepNameTb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -123,14 +123,6 @@
             this.AddBtn.TabIndex = 83;
             this.AddBtn.Text = "ADD";
             this.AddBtn.UseVisualStyleBackColor = false;
-            // 
-            // DepNameTb
-            // 
-            this.DepNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepNameTb.Location = new System.Drawing.Point(28, 376);
-            this.DepNameTb.Name = "DepNameTb";
-            this.DepNameTb.Size = new System.Drawing.Size(221, 30);
-            this.DepNameTb.TabIndex = 82;
             // 
             // pictureBox6
             // 
@@ -352,12 +344,21 @@
             this.label6.TabIndex = 94;
             this.label6.Text = "Department Name ";
             // 
+            // DepNameTb
+            // 
+            this.DepNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepNameTb.Location = new System.Drawing.Point(28, 376);
+            this.DepNameTb.Name = "DepNameTb";
+            this.DepNameTb.Size = new System.Drawing.Size(221, 30);
+            this.DepNameTb.TabIndex = 95;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 880);
+            this.Controls.Add(this.DepNameTb);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -367,7 +368,6 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.Edition);
             this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.DepNameTb);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -404,7 +404,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button Edition;
         private System.Windows.Forms.Button AddBtn;
-        private System.Windows.Forms.TextBox DepNameTb;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -423,5 +422,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox DepNameTb;
     }
 }

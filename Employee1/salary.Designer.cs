@@ -167,7 +167,7 @@
             this.gunaDateTimePicker3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaDateTimePicker3.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker3.Location = new System.Drawing.Point(28, 531);
+            this.gunaDateTimePicker3.Location = new System.Drawing.Point(30, 531);
             this.gunaDateTimePicker3.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker3.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker3.Name = "gunaDateTimePicker3";
@@ -179,6 +179,7 @@
             this.gunaDateTimePicker3.TabIndex = 102;
             this.gunaDateTimePicker3.Text = "Wednesday, January 25, 2023";
             this.gunaDateTimePicker3.Value = new System.DateTime(2023, 1, 25, 15, 45, 44, 193);
+            this.gunaDateTimePicker3.ValueChanged += new System.EventHandler(this.gunaDateTimePicker3_ValueChanged);
             // 
             // label4
             // 

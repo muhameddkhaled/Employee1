@@ -86,11 +86,12 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Teal;
-            this.label10.Location = new System.Drawing.Point(813, 241);
+            this.label10.Location = new System.Drawing.Point(803, 241);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(68, 25);
             this.label10.TabIndex = 109;
             this.label10.Text = "Salary";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 

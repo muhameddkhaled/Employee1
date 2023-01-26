@@ -44,7 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.DepList = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.AddBtn = new System.Windows.Forms.Button();
             this.Edition = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -200,36 +200,6 @@
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
-            // DepList
-            // 
-            this.DepList.AnimationHoverSpeed = 0.07F;
-            this.DepList.AnimationSpeed = 0.03F;
-            this.DepList.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DepList.BorderColor = System.Drawing.Color.Black;
-            this.DepList.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.DepList.CheckedBorderColor = System.Drawing.Color.Black;
-            this.DepList.CheckedForeColor = System.Drawing.Color.White;
-            this.DepList.CheckedImage = ((System.Drawing.Image)(resources.GetObject("DepList.CheckedImage")));
-            this.DepList.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.DepList.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.DepList.FocusedColor = System.Drawing.Color.Empty;
-            this.DepList.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DepList.ForeColor = System.Drawing.Color.White;
-            this.DepList.Image = ((System.Drawing.Image)(resources.GetObject("DepList.Image")));
-            this.DepList.ImageSize = new System.Drawing.Size(20, 20);
-            this.DepList.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.DepList.Location = new System.Drawing.Point(569, 348);
-            this.DepList.Name = "DepList";
-            this.DepList.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.DepList.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.DepList.OnHoverForeColor = System.Drawing.Color.White;
-            this.DepList.OnHoverImage = null;
-            this.DepList.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.DepList.OnPressedColor = System.Drawing.Color.Black;
-            this.DepList.Size = new System.Drawing.Size(599, 371);
-            this.DepList.TabIndex = 74;
-            this.DepList.Text = "gunaAdvenceButton2";
-            // 
             // gunaAdvenceButton1
             // 
             this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
@@ -352,12 +322,31 @@
             this.button1.Text = "DELET";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // gunaComboBox1
+            // 
+            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
+            this.gunaComboBox1.FormattingEnabled = true;
+            this.gunaComboBox1.Location = new System.Drawing.Point(585, 375);
+            this.gunaComboBox1.Name = "gunaComboBox1";
+            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.gunaComboBox1.Size = new System.Drawing.Size(700, 31);
+            this.gunaComboBox1.TabIndex = 99;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 880);
+            this.Controls.Add(this.gunaComboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Edition);
             this.Controls.Add(this.AddBtn);
@@ -377,7 +366,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.DepList);
             this.Controls.Add(this.gunaAdvenceButton1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -412,7 +400,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private Guna.UI.WinForms.GunaAdvenceButton DepList;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -422,5 +409,6 @@
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button Edition;
         private System.Windows.Forms.Button button1;
+        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
     }
 }

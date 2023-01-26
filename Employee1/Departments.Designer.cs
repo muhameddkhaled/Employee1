@@ -34,7 +34,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.Edition = new System.Windows.Forms.Button();
-            this.AddBtn = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -54,6 +53,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.DepNameTb = new System.Windows.Forms.TextBox();
+            this.AddBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -109,20 +109,6 @@
             this.Edition.TabIndex = 84;
             this.Edition.Text = "UBDATE";
             this.Edition.UseVisualStyleBackColor = false;
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.BackColor = System.Drawing.Color.PapayaWhip;
-            this.AddBtn.FlatAppearance.BorderSize = 2;
-            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.AddBtn.ForeColor = System.Drawing.Color.Teal;
-            this.AddBtn.Location = new System.Drawing.Point(28, 412);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(118, 36);
-            this.AddBtn.TabIndex = 83;
-            this.AddBtn.Text = "ADD";
-            this.AddBtn.UseVisualStyleBackColor = false;
             // 
             // pictureBox6
             // 
@@ -352,12 +338,27 @@
             this.DepNameTb.Size = new System.Drawing.Size(221, 30);
             this.DepNameTb.TabIndex = 95;
             // 
+            // AddBtn
+            // 
+            this.AddBtn.BackColor = System.Drawing.Color.PapayaWhip;
+            this.AddBtn.FlatAppearance.BorderSize = 2;
+            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.AddBtn.ForeColor = System.Drawing.Color.Teal;
+            this.AddBtn.Location = new System.Drawing.Point(28, 412);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(118, 36);
+            this.AddBtn.TabIndex = 96;
+            this.AddBtn.Text = "ADD";
+            this.AddBtn.UseVisualStyleBackColor = false;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 880);
+            this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.DepNameTb);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
@@ -367,7 +368,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.Edition);
-            this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -403,7 +403,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button Edition;
-        private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -423,5 +422,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox DepNameTb;
+        private System.Windows.Forms.Button AddBtn;
     }
 }

@@ -120,6 +120,7 @@
             this.label9.Size = new System.Drawing.Size(99, 25);
             this.label9.TabIndex = 86;
             this.label9.Text = "Employee";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox7
             // 

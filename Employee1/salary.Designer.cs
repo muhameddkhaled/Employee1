@@ -35,7 +35,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.gunaDateTimePicker3 = new Guna.UI.WinForms.GunaDateTimePicker();
@@ -121,15 +120,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 106;
             this.pictureBox7.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 593);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1395, 10);
-            this.panel3.TabIndex = 105;
             // 
             // button1
             // 
@@ -310,9 +300,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 603);
+            this.panel2.Location = new System.Drawing.Point(0, 655);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1395, 100);
+            this.panel2.Size = new System.Drawing.Size(1395, 48);
             this.panel2.TabIndex = 87;
             // 
             // label5
@@ -442,7 +432,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.gunaDateTimePicker3);
@@ -488,7 +477,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker3;

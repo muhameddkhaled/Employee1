@@ -33,7 +33,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.Edition = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -54,6 +53,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.DepNameTb = new System.Windows.Forms.TextBox();
             this.AddBtn = new System.Windows.Forms.Button();
+            this.Edition = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -96,19 +96,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 85;
             this.pictureBox7.TabStop = false;
-            // 
-            // Edition
-            // 
-            this.Edition.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.Edition.FlatAppearance.BorderSize = 2;
-            this.Edition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.Edition.Location = new System.Drawing.Point(152, 412);
-            this.Edition.Name = "Edition";
-            this.Edition.Size = new System.Drawing.Size(118, 36);
-            this.Edition.TabIndex = 84;
-            this.Edition.Text = "UBDATE";
-            this.Edition.UseVisualStyleBackColor = false;
             // 
             // pictureBox6
             // 
@@ -352,12 +339,26 @@
             this.AddBtn.Text = "ADD";
             this.AddBtn.UseVisualStyleBackColor = false;
             // 
+            // Edition
+            // 
+            this.Edition.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.Edition.FlatAppearance.BorderSize = 2;
+            this.Edition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.Edition.Location = new System.Drawing.Point(152, 412);
+            this.Edition.Name = "Edition";
+            this.Edition.Size = new System.Drawing.Size(118, 36);
+            this.Edition.TabIndex = 97;
+            this.Edition.Text = "UBDATE";
+            this.Edition.UseVisualStyleBackColor = false;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 880);
+            this.Controls.Add(this.Edition);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.DepNameTb);
             this.Controls.Add(this.label6);
@@ -367,7 +368,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.Edition);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -402,7 +402,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button Edition;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -423,5 +422,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox DepNameTb;
         private System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.Button Edition;
     }
 }

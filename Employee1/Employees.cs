@@ -126,7 +126,7 @@ namespace EmployeeMgmt1
                     string DOB = DOBTb.Value.ToString(); 
                     string JDate = JDateTb.Value.ToString(); 
                     int Salary = Convert.ToInt32(DailySalTb.Text); 
-                    string Query = "Delete from EmployeeTb1 where Empid= {0}";
+                    string Query = "Delete from EmployeeTb1 where Empid= {0}"; 
                     Query = string.Format(Query, key);
                     Con.SetData(Query);
                     ShowEmp();

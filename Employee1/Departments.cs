@@ -104,7 +104,7 @@ namespace EmployeeMgmt1
                     Query = string.Format(Query, key); 
                     Con.SetData(Query); 
                     ShowDepartments(); 
-                    MessageBox.Show("Department Deleted!!!");
+                    MessageBox.Show("Department Deleted!!!"); 
                     DepNameTb.Text = "";
                 }
             }

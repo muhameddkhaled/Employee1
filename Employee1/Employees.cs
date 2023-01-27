@@ -14,7 +14,7 @@ namespace EmployeeMgmt1
     public partial class Employees : Form
     {
         Functions Con; 
-        public Employees()
+        public Employees() 
         {
             InitializeComponent();
             Con = new Functions();

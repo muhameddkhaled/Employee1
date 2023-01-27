@@ -22,7 +22,7 @@ namespace EmployeeMgmt1
         }
         private void ShowDepartments() 
         {
-            string Query = "Select * from DepartmentTb1";
+            string Query = "Select * from DepartmentTb1"; 
             DepList.DataSource = Con.GetData(Query);
         }
 

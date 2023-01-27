@@ -29,7 +29,7 @@ namespace EmployeeMgmt1
         private void AddBtn_Click(object sender, EventArgs e) 
         {
             try
-            {
+            { 
                 if (DepNameTb.Text == "")
                 {
                     MessageBox.Show("missing data!!!");

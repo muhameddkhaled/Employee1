@@ -31,7 +31,7 @@ namespace EmployeeMgmt1
             try
             { 
                 if (DepNameTb.Text == "") 
-                {
+                { 
                     MessageBox.Show("missing data!!!");
                 }
                 else

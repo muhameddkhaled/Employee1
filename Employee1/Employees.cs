@@ -83,7 +83,7 @@ namespace EmployeeMgmt1
             {
                 if (EmpNameTb.Text == "" || GenCb.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySalTb.Text == "")
                 {
-                    MessageBox.Show("missing data!!!");
+                    MessageBox.Show("missing data!!!"); 
                 }
                 else
                 {

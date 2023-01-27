@@ -19,7 +19,7 @@ namespace EmployeeMgmt1
             InitializeComponent(); 
             Con = new Functions(); 
             ShowEmp(); 
-            GetDepartment();
+            GetDepartment(); 
         }
         private void ShowEmp()
         {

@@ -79,7 +79,7 @@ namespace EmployeeMgmt1
                     Query = string.Format(Query, DepNameTb.Text, key);  
                     Con.SetData(Query); 
                     ShowDepartments(); 
-                    MessageBox.Show("Department Updated!!!");
+                    MessageBox.Show("Department Updated!!!"); 
                     DepNameTb.Text = "";
                 }
             }

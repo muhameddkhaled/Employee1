@@ -118,7 +118,7 @@ namespace EmployeeMgmt1
                 {
                     MessageBox.Show("missing data!!!"); 
                 }
-                else
+                else 
                 {
                     string Name = EmpNameTb.Text;
                     string Gender = GenCb.SelectedItem.ToString();

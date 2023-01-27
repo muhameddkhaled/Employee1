@@ -41,7 +41,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.UbdateBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
-            this.JDate = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.JDateTb = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.DOBTb = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
@@ -61,6 +61,7 @@
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.GenCh = new System.Windows.Forms.ComboBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -199,27 +200,28 @@
             this.AddBtn.UseVisualStyleBackColor = false;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
-            // JDate
+            // JDateTb
             // 
-            this.JDate.BaseColor = System.Drawing.Color.White;
-            this.JDate.BorderColor = System.Drawing.Color.Silver;
-            this.JDate.CustomFormat = null;
-            this.JDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.JDate.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.JDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.JDate.ForeColor = System.Drawing.Color.Black;
-            this.JDate.Location = new System.Drawing.Point(22, 601);
-            this.JDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.JDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.JDate.Name = "JDate";
-            this.JDate.OnHoverBaseColor = System.Drawing.Color.White;
-            this.JDate.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.JDate.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.JDate.OnPressedColor = System.Drawing.Color.Black;
-            this.JDate.Size = new System.Drawing.Size(223, 30);
-            this.JDate.TabIndex = 160;
-            this.JDate.Text = "Wednesday, January 25, 2023";
-            this.JDate.Value = new System.DateTime(2023, 1, 25, 15, 45, 44, 193);
+            this.JDateTb.BaseColor = System.Drawing.Color.White;
+            this.JDateTb.BorderColor = System.Drawing.Color.Silver;
+            this.JDateTb.CustomFormat = null;
+            this.JDateTb.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.JDateTb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.JDateTb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.JDateTb.ForeColor = System.Drawing.Color.Black;
+            this.JDateTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.JDateTb.Location = new System.Drawing.Point(22, 601);
+            this.JDateTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.JDateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.JDateTb.Name = "JDateTb";
+            this.JDateTb.OnHoverBaseColor = System.Drawing.Color.White;
+            this.JDateTb.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.JDateTb.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.JDateTb.OnPressedColor = System.Drawing.Color.Black;
+            this.JDateTb.Size = new System.Drawing.Size(223, 30);
+            this.JDateTb.TabIndex = 160;
+            this.JDateTb.Text = "1/25/2023";
+            this.JDateTb.Value = new System.DateTime(2023, 1, 25, 15, 45, 44, 193);
             // 
             // label4
             // 
@@ -241,6 +243,7 @@
             this.DOBTb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DOBTb.ForeColor = System.Drawing.Color.Black;
+            this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DOBTb.Location = new System.Drawing.Point(22, 540);
             this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DOBTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -251,7 +254,7 @@
             this.DOBTb.OnPressedColor = System.Drawing.Color.Black;
             this.DOBTb.Size = new System.Drawing.Size(223, 30);
             this.DOBTb.TabIndex = 158;
-            this.DOBTb.Text = "Wednesday, January 25, 2023";
+            this.DOBTb.Text = "1/25/2023";
             this.DOBTb.Value = new System.DateTime(2023, 1, 25, 15, 45, 44, 193);
             // 
             // label13
@@ -441,11 +444,25 @@
             this.pictureBox5.TabIndex = 152;
             this.pictureBox5.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.button1.Location = new System.Drawing.Point(765, 778);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 36);
+            this.button1.TabIndex = 173;
+            this.button1.Text = "DELATE";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1401, 882);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.DepCh);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.DailySalTb);
@@ -457,7 +474,7 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.UbdateBtn);
             this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.JDate);
+            this.Controls.Add(this.JDateTb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.DOBTb);
             this.Controls.Add(this.label13);
@@ -504,7 +521,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button UbdateBtn;
         private System.Windows.Forms.Button AddBtn;
-        private Guna.UI.WinForms.GunaDateTimePicker JDate;
+        private Guna.UI.WinForms.GunaDateTimePicker JDateTb;
         private System.Windows.Forms.Label label4;
         private Guna.UI.WinForms.GunaDateTimePicker DOBTb;
         private System.Windows.Forms.Label label13;
@@ -524,5 +541,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
         private System.Windows.Forms.ComboBox GenCh;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -44,7 +44,37 @@ namespace Employee1
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (EmpNameTb.Text == "" || GenCh.SelectedIndex == -1 || DepCh.SelectedIndex == -1 || DailySalTb.Text == "")
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Name = EmpNameTb.Text;
+                    string Gender = GenCh.SelectedItem.ToString();
+                    int Dep = Convert.ToInt32(DepCh.SelectedValue.ToString());
+                    string DOB = DOBTb.Value.ToString();
+                    string JDate = JDateTb.Value.ToString();
+                    int Salary = Convert.ToInt32(DailySalTb.Text);
+                    string Query = "insert into EmployeeTb1 values('{0}','{1}',{2},'{3}','{4}',{5})";
+                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary);
+                    Con.SetData(Query);
+                    ShowEmp();
+                    MessageBox.Show("Emoloyee Updated!!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
+                    GenCh.SelectedIndex = -1;
+                    GenCh.SelectedIndex = -1;
+            }
 
+                }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+
+            }
 
         }
     }

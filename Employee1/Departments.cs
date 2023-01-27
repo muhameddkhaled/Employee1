@@ -72,7 +72,7 @@ namespace EmployeeMgmt1
                 {
                     MessageBox.Show("missing data!!!"); 
                 }
-                else
+                else 
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Update DepartmentTb1 set Depname = '{0}' where Depid = {1}";

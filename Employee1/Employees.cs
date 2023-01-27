@@ -23,7 +23,7 @@ namespace EmployeeMgmt1
         }
         private void ShowEmp() 
         {
-            try
+            try 
             {
                 string Query = "Select * from EmployeeTb1";
                 EmployeeList.DataSource = Con.GetData(Query);

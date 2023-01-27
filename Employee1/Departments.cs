@@ -97,7 +97,7 @@ namespace EmployeeMgmt1
                 {
                     MessageBox.Show("missing data!!!"); 
                 }
-                else
+                else 
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Delete from DepartmentTb1 where Depid = {0}";

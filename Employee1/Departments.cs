@@ -118,7 +118,7 @@ namespace EmployeeMgmt1
         {
             Employees obj = new Employees(); 
             obj.Show();  
-            this.Hide();
+            this.Hide(); 
         }
 
         private void label10_Click(object sender, EventArgs e)

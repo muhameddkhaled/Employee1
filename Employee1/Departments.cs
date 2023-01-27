@@ -100,7 +100,7 @@ namespace EmployeeMgmt1
                 else 
                 {
                     string Dep = DepNameTb.Text; 
-                    string Query = "Delete from DepartmentTb1 where Depid = {0}";
+                    string Query = "Delete from DepartmentTb1 where Depid = {0}"; 
                     Query = string.Format(Query, key);
                     Con.SetData(Query);
                     ShowDepartments();

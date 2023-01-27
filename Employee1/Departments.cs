@@ -80,7 +80,7 @@ namespace EmployeeMgmt1
                     Con.SetData(Query); 
                     ShowDepartments(); 
                     MessageBox.Show("Department Updated!!!"); 
-                    DepNameTb.Text = "";
+                    DepNameTb.Text = ""; 
                 }
             }
             catch (Exception Ex)

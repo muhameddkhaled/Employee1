@@ -47,13 +47,13 @@
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.EmpLbl = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.DepNameTb = new System.Windows.Forms.TextBox();
             this.AddBtn = new System.Windows.Forms.Button();
-            this.Edition = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.EditBon = new System.Windows.Forms.Button();
+            this.DeletBtn = new System.Windows.Forms.Button();
+            this.Deplist = new Guna.UI.WinForms.GunaComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -252,16 +252,17 @@
             this.label8.TabIndex = 92;
             this.label8.Text = "Logout";
             // 
-            // label9
+            // EmpLbl
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Teal;
-            this.label9.Location = new System.Drawing.Point(575, 238);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 25);
-            this.label9.TabIndex = 93;
-            this.label9.Text = "Employee";
+            this.EmpLbl.AutoSize = true;
+            this.EmpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpLbl.ForeColor = System.Drawing.Color.Teal;
+            this.EmpLbl.Location = new System.Drawing.Point(575, 238);
+            this.EmpLbl.Name = "EmpLbl";
+            this.EmpLbl.Size = new System.Drawing.Size(99, 25);
+            this.EmpLbl.TabIndex = 93;
+            this.EmpLbl.Text = "Employee";
+            this.EmpLbl.Click += new System.EventHandler(this.EmpLbl_Click);
             // 
             // label6
             // 
@@ -297,49 +298,52 @@
             this.AddBtn.UseVisualStyleBackColor = false;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
-            // Edition
+            // EditBon
             // 
-            this.Edition.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.Edition.FlatAppearance.BorderSize = 2;
-            this.Edition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.Edition.Location = new System.Drawing.Point(152, 412);
-            this.Edition.Name = "Edition";
-            this.Edition.Size = new System.Drawing.Size(118, 36);
-            this.Edition.TabIndex = 97;
-            this.Edition.Text = "UBDATE";
-            this.Edition.UseVisualStyleBackColor = false;
+            this.EditBon.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.EditBon.FlatAppearance.BorderSize = 2;
+            this.EditBon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditBon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.EditBon.Location = new System.Drawing.Point(152, 412);
+            this.EditBon.Name = "EditBon";
+            this.EditBon.Size = new System.Drawing.Size(118, 36);
+            this.EditBon.TabIndex = 97;
+            this.EditBon.Text = "UBDATE";
+            this.EditBon.UseVisualStyleBackColor = false;
+            this.EditBon.Click += new System.EventHandler(this.EditBon_Click);
             // 
-            // button1
+            // DeletBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.button1.Location = new System.Drawing.Point(93, 454);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 36);
-            this.button1.TabIndex = 98;
-            this.button1.Text = "DELET";
-            this.button1.UseVisualStyleBackColor = false;
+            this.DeletBtn.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.DeletBtn.FlatAppearance.BorderSize = 2;
+            this.DeletBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeletBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.DeletBtn.Location = new System.Drawing.Point(93, 454);
+            this.DeletBtn.Name = "DeletBtn";
+            this.DeletBtn.Size = new System.Drawing.Size(118, 36);
+            this.DeletBtn.TabIndex = 98;
+            this.DeletBtn.Text = "DELET";
+            this.DeletBtn.UseVisualStyleBackColor = false;
+            this.DeletBtn.Click += new System.EventHandler(this.DeletBtn_Click);
             // 
-            // gunaComboBox1
+            // Deplist
             // 
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Location = new System.Drawing.Point(585, 375);
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox1.Size = new System.Drawing.Size(700, 31);
-            this.gunaComboBox1.TabIndex = 99;
+            this.Deplist.BackColor = System.Drawing.Color.Transparent;
+            this.Deplist.BaseColor = System.Drawing.Color.White;
+            this.Deplist.BorderColor = System.Drawing.Color.Silver;
+            this.Deplist.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Deplist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Deplist.FocusedColor = System.Drawing.Color.Empty;
+            this.Deplist.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Deplist.ForeColor = System.Drawing.Color.Black;
+            this.Deplist.FormattingEnabled = true;
+            this.Deplist.Location = new System.Drawing.Point(585, 375);
+            this.Deplist.Name = "Deplist";
+            this.Deplist.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Deplist.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.Deplist.Size = new System.Drawing.Size(700, 31);
+            this.Deplist.TabIndex = 99;
+            this.Deplist.SelectedIndexChanged += new System.EventHandler(this.Deplist_SelectedIndexChanged);
             // 
             // Departments
             // 
@@ -347,13 +351,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1395, 880);
-            this.Controls.Add(this.gunaComboBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Edition);
+            this.Controls.Add(this.Deplist);
+            this.Controls.Add(this.DeletBtn);
+            this.Controls.Add(this.EditBon);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.DepNameTb);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.EmpLbl);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
@@ -404,12 +408,12 @@
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label EmpLbl;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox DepNameTb;
         private System.Windows.Forms.Button AddBtn;
-        private System.Windows.Forms.Button Edition;
-        private System.Windows.Forms.Button button1;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
+        private System.Windows.Forms.Button EditBon;
+        private System.Windows.Forms.Button DeletBtn;
+        private Guna.UI.WinForms.GunaComboBox Deplist;
     }
 }

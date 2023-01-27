@@ -1,5 +1,7 @@
 ﻿using Employee1;
+using EmployeeMgmt1;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +15,37 @@ namespace Employee1
 {
     public partial class Employees : Form
     {
-        Functions Con; 
-        public Employees() 
+        Functions Con;
+        private Functions con;
+
+        public Employees()
         {
-            InitializeComponent(); 
-            ShowEmp(); 
+            InitializeComponent();
+            con = new Functions();
+            ShowEmp();
+            GetDepartment(); 
+            
         }
-            }
+
+
+        private void ShowEmp()
+        {
+            string Query = "Select * from EmployeeTb1"; 
+            throw new NotImplementedException();
+            EmployeeList.DataSource = con.GetData(Query);
         }
+        private void GetDepartment ()
+        {
+            string query = " select * from DepartmentTb1";
+            DepCh.DisplayMember = con.GetData(query).Columns["DepName"].ToString();
+            DepCh.ValueMember = con.GetData(query).Columns["DepId"].ToString();
+            DepCh.DataSource = Con.GetData(query);
+
+        }
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+
+
+        }
+    }
+}

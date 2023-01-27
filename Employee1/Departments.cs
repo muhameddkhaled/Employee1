@@ -116,7 +116,7 @@ namespace EmployeeMgmt1
 
         private void EmpLbl_Click(object sender, EventArgs e)
         {
-            Employees obj = new Employees();
+            Employees obj = new Employees(); 
             obj.Show();
             this.Hide();
         }

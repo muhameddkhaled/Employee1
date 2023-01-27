@@ -97,7 +97,7 @@ namespace EmployeeMgmt1
                     Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary); 
                     Con.SetData(Query); 
                     ShowEmp(); 
-                    MessageBox.Show("Emoloyee Updated!!!");
+                    MessageBox.Show("Emoloyee Updated!!!"); 
                     EmpNameTb.Text = "";
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;

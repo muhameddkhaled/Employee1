@@ -105,7 +105,7 @@ namespace EmployeeMgmt1
                     Con.SetData(Query); 
                     ShowDepartments(); 
                     MessageBox.Show("Department Deleted!!!"); 
-                    DepNameTb.Text = "";
+                    DepNameTb.Text = ""; 
                 }
             }
             catch (Exception Ex)

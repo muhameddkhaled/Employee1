@@ -129,7 +129,7 @@ namespace EmployeeMgmt1
                     string Query = "Delete from EmployeeTb1 where Empid= {0}"; 
                     Query = string.Format(Query, key); 
                     Con.SetData(Query); 
-                    ShowEmp();
+                    ShowEmp(); 
                     MessageBox.Show("Emoloyee Deleted!!!");
                     EmpNameTb.Text = "";
                     DailySalTb.Text = "";

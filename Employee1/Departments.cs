@@ -58,7 +58,7 @@ namespace EmployeeMgmt1
             {
                 key = 0; 
             }
-            else
+            else 
             {
                 key = Convert.ToInt32(DepList.SelectedRows[0].Cells[0].Value.ToString());
             }

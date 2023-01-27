@@ -34,7 +34,7 @@ namespace EmployeeMgmt1
                 { 
                     MessageBox.Show("missing data!!!");
                 }
-                else
+                else 
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "insert into DepartmentTb1 values('{0}')";
